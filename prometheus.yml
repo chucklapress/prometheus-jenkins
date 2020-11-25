@@ -13,7 +13,7 @@ scrape_configs:
   - job_name: 'Jenkins'
     metrics_path: '/prometheus/'
     static_configs:
-      - targets: ['167.99.152.29:8080']
+      - targets: ['xxx.xx.xxx.xx:8080'] #enter your Jenkins url here!!
     metric_relabel_configs:
     - action: replace
       source_labels: [exported_job]

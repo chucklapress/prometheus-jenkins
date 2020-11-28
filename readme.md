@@ -5,8 +5,8 @@ The purpose of this repo is to provide a Dockerfile to support Prometheus and it
 ## Installation
 
 Clone the repository, cd into it and run docker build -t my-prometheus .  
-the space and period are important in the above command.
-To get Prometheus up and running in a Docker container run the command  
+the space and period are important in the above command.  
+To get Prometheus up and running in a Docker container run the command. 👇    
 docker run -d -p 9090:9090 my-prometheus  
 if you visit localhost:9090 you'll be greeted by the Prometheus dashboard.  
 ![](images/prometheus.png?raw=true)

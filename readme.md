@@ -4,9 +4,12 @@ The purpose of this repo is to provide a Dockerfile to support Prometheus and it
 
 ## Installation
 
-Clone the repository, cd into it and run docker build -t my-prometheus . the space and period are important.
-To get Prometheus up and running in a Docker container run the command docker run -d -p 9090:9090 my-prometheus
-if you visit localhost:9090 you'll be greeted by the Prometheus dashboard.
+Clone the repository, cd into it and run docker build -t my-prometheus .  
+the space and period are important in the above command.
+To get Prometheus up and running in a Docker container run the command  
+docker run -d -p 9090:9090 my-prometheus  
+if you visit localhost:9090 you'll be greeted by the Prometheus dashboard.  
+![](images/prometheus.png?raw=true)
 
 ## Use cases
 As you may have gathered by the yml file the specific use case laid out here is for using the Prometheus plugin for Jenkins CI/CD pipeline to expose metrics that can be graphed in Prometheus or even to Grafana.
@@ -31,4 +34,4 @@ I'll provide some helpful links for Installing and also running it on Docker.
 [Jenkins](https://www.jenkins.io/doc/book/installing/)  
 [Dockerized Jenkins](https://hub.docker.com/r/jenkins/jenkins)  
 ## Finally  
-This hopefully provides some good material to make a pretty robust system of not only running a ci/cd pipeline but also having a container available that monitors and provides a very useful graph to inform you of status and health 
+This hopefully provides some good material to make a pretty robust system of not only running a ci/cd pipeline but also having a container available that monitors and provides a very useful graph to inform you of status and health
